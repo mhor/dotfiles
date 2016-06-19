@@ -9,6 +9,7 @@ sudo apt-get install git
 sudo apt-get install htop
 sudo apt-get install unrar
 sudo apt-get install xclip
+sudo apt-get install gmusicbrowser
 
 #Docker
 sudo apt-get install apt-transport-https ca-certificates
