@@ -4,12 +4,25 @@ sudo apt-get install chromium-browser
 sudo apt-get install pepperflashplugin-nonfree
 sudo apt-get install conky-all
 sudo apt-get install vlc
+sudo apt-get install mediainfo
 sudo apt-get install tmux
 sudo apt-get install git
 sudo apt-get install htop
 sudo apt-get install unrar
 sudo apt-get install xclip
 sudo apt-get install gmusicbrowser
+sudo apt-get install gddrescue xz-utils
+
+#Spotity
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client
+
+#PHP env
+sudo apt-get install php php-xml php-curl
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
 
 #Docker
 sudo apt-get install apt-transport-https ca-certificates
